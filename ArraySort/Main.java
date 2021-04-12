@@ -4,13 +4,11 @@ import utils.*;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("This is tool for Array Sort");
+        System.out.println("\n" + "This is tool for generate and sort an Array: " + "\n");
 
-        int[] t = {1, 8, 3, 6};
+        int[] t = Array.genArray(20);
+        Array.sort(t);
+        Array.findMax(t, t.length);
         Array.printArray(t);
-
-        int[] t2 = Array.genArray(20);
-        Array.printArray(t2);
-        
     }
 }
