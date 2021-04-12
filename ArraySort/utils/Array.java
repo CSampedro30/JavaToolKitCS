@@ -11,6 +11,7 @@ public class Array {
             System.out.print(", " + t[i]);
         }
         System.out.println("]");
+        
     }
 
     public static void printArray(String[] t) {
@@ -28,8 +29,9 @@ public class Array {
     public static int[] genArray(int size) {
         int[] t = new int[size];
         for (int i = 0; i < t.length; i++) {
-            t[i] = (int) (Math.random() * 101);
+            t[i] = (int) (Math.random() * 20001);
         }
+
         return t;
     }
 
